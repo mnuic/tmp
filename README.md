@@ -1,3 +1,5 @@
+### setup
+
 Odem na https://github.com/minus5/tmp i napravim fork.
 Napravim clone, postavim si origin na $USER.
 Ovo se obicno zove origin. Da bi bilo jasnie sto je cije ovdje cu koristi $USER i minus5.
@@ -80,6 +82,8 @@ git push
 ```
 
 
+### pull/merge/fetch
+
 Nakon sto sam prvi puta napravio sve pripreme dalje ide.
 
 napravim pull request
@@ -120,7 +124,9 @@ brisanje remote brancha
 git push <remote_name> --delete <branch_name>
 ```
 
-Reference:
+### reference:
 [Github Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
+
 [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) *** required reading
+
 [Push Config](https://stackoverflow.com/questions/24864700/fatal-the-upstream-branch-of-your-current-branch-does-not-match-the-name-of-you)
