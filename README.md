@@ -108,6 +108,18 @@ git merge minus5/master
 git push
 ```
 
+### cleanup
+
+brisanje lokalnog brancha 
+```
+git branch -d branch_name
+git branch -D branch_name  # force
+```
+brisanje remote brancha
+```
+git push <remote_name> --delete <branch_name>
+```
+
 Reference:
 [Github Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) *** required reading
