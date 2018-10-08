@@ -1,8 +1,9 @@
 Odem na https://github.com/minus5/tmp i napravim fork.
-cd ~/work/gocode/src/github.com/$USER
-
-napravim clone, postavim si origin na $USER da mi je lakse razlikovati 
+Napravim clone, postavim si origin na $USER.
+Ovo se obicno zove origin. Da bi bilo jasnie sto je cije ovdje cu koristi $USER i minus5.
+U github open source svijetu uobicajeno je origin i upstream, ianic ($USER) i minus5 mi daju vise informacija.
 ```
+cd ~/work/gocode/src/github.com/$USER
 git clone git@github.com:$USER/tmp.git -o $USER
 git branch -vva
 ```
@@ -12,7 +13,7 @@ git remote add minus5 git@github.com:minus5/tmp.git
 git fetch minus5
 ```
 
-shvatiti sto imam
+pogledam sto imam
 ```
 git branch -vva
 ```
@@ -41,9 +42,12 @@ napisat ce mi url za pull request
 odem tamo i posaljem pull request
 
 
+Dalje nastavlja onaj koji merge-a.
+To moze biti ista osoba isti repo, kao u nastavku.
+
 pripremim se za merganje pull requesta
 editiram .git/config
-u sekciji [remote "minus5"] mu objanim da mi skida i pull requeste
+u sekciji [remote "minus5"] mu objasnim da mi skida i pull requeste
 ```
 fetch = +refs/pull/*/head:refs/pull/minus5/*
 ```
@@ -51,7 +55,6 @@ napravim branch za merge
 ```
 git checkout -b m5_master minus5/master
 ```
-
 
 testiram pull request
 ```
