@@ -54,6 +54,7 @@ fetch = +refs/pull/*/head:refs/pull/minus5/*
 napravim branch za merge
 ```
 git checkout -b m5_master minus5/master
+git config push.default upstream
 ```
 
 testiram pull request
@@ -96,7 +97,7 @@ merge pull requesta
 git pull minus5   # napise mi da ima novi pull
 git checkout m5_master
 git merge pull/minus5/2
-git push minus5 HEAD:master
+git push 
 ```
 
 aktualiziram fork
@@ -110,3 +111,4 @@ git push
 Reference:
 [Github Forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
 [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches) *** required reading
+[Push Config](https://stackoverflow.com/questions/24864700/fatal-the-upstream-branch-of-your-current-branch-does-not-match-the-name-of-you)
